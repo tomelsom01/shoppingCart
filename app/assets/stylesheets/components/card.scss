@@ -1,0 +1,13 @@
+.cardbox {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cardgrids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-gap: 10px; /* Gap between cards */
+}
+

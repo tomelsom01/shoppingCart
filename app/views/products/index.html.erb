@@ -1,12 +1,13 @@
 <h1>Hello world</h1>
 <h1>Products List</h1>
 
-<% @products.each do |product| %>
-  <div class="card">
-    <h2><%= product.name %></h2>
-    <img src="<%= product.image %>" alt="<%= product.name %> logo">
-    <p><strong>Price:</strong> $<%= product.price %></p>
-    <p><strong>Description:</strong> <%= product.description %></p>
-  </div>
-  <hr>
-<% end %>
+<div class="cardgrids">
+  <% @products.each do |product| %>
+      <div class="cardbox container">
+        <h2><%= product.name %></h2>
+        <img src="<%= product.image %>" class="imagelogo" alt="<%= product.name %> logo">
+        <p><strong>Price:</strong> $<%= product.price %></p>
+        <p><strong>Description:</strong> <%= product.description %></p>
+      </div>
+  <% end %>
+</div>
