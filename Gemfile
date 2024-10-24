@@ -76,3 +76,7 @@ gem "dotenv-rails"
 gem "faker"
 
 gem "devise"
+
+group :development, :test do
+  gem 'rspec-rails'
+end
