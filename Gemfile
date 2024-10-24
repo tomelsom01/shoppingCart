@@ -74,3 +74,5 @@ end
 gem 'bootstrap', '~> 5.3.3'
 gem "dotenv-rails"
 gem "faker"
+
+gem "devise"
