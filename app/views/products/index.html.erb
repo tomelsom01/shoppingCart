@@ -8,6 +8,7 @@
         <img src="<%= product.image %>" class="imagelogo" alt="<%= product.name %> logo">
         <p><strong>Price:</strong> $<%= product.price %></p>
         <p><strong>Description:</strong> <%= product.description %></p>
+        <%= button_to 'Add to Cart', carts_add_item_path(id: current_cart.id, product_id: product.id), method: :post %>
       </div>
   <% end %>
 </div>

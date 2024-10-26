@@ -1,0 +1,9 @@
+<% @cart.cart_items.each do |item| %>
+  <div class="cart-item">
+    <h3><%= item.product.name %></h3>
+    <p>Quantity: <%= item.quantity %></p>
+    <%= button_to 'Remove', remove_item_cart_path(product_id: item.product.id) %>
+  </div>
+<% end %>
+<p>Total: <%= @cart.total %></p>
+<%= button_to 'Checkout', checkout_path %>
